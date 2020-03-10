@@ -1918,8 +1918,8 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: "<img src='./source/img/header/left.svg'  class='slider__arrow slider__arrow--prev'>",
-        nextArrow: "<img src='./source/img/header/right.svg' class='slider__arrow slider__arrow--next'>",
+        prevArrow: "<img src='./build/img/header/left.svg'  class='slider__arrow slider__arrow--prev'>",
+        nextArrow: "<img src='./build/img/header/right.svg' class='slider__arrow slider__arrow--next'>",
         dots: true
 
     });
@@ -1930,7 +1930,7 @@ $(document).ready(function(){
     $('.underheader__list li').hover(function(){
        
         $(this.getElementsByClassName('underheader__img')).attr(
-            'src', "./source/img/underheader/"+$(this).attr("class")+"hover.svg"
+            'src', "./build/img/underheader/"+$(this).attr("class")+"hover.svg"
         )
         $(this.getElementsByClassName('underheader__h1')).css({
             "color":"#c7b299",
@@ -1940,7 +1940,7 @@ $(document).ready(function(){
         })
     }, function(){
         $(this.getElementsByClassName('underheader__img')).attr(
-            'src', "./source/img/underheader/"+$(this).attr("class")+".svg"
+            'src', "./build/img/underheader/"+$(this).attr("class")+".svg"
         )
         $(this.getElementsByClassName('underheader__h1')).css({
             "color":"#555555"
@@ -1951,13 +1951,6 @@ $(document).ready(function(){
 
     });
 
-    // projects-dots-text-------------------------------------------------
-    // $('.projects .slick-dots li:nth-of-type(1)').text('All')
-    // $('.projects .slick-dots li:nth-of-type(2)').text('Web Design')
-    // $('.projects .slick-dots li:nth-of-type(3)').text('Mobile App')
-    // $('.projects .slick-dots li:nth-of-type(4)').text('illustration')
-    // $('.projects .slick-dots li:nth-of-type(5)').text('Photography')
-    // pojects-hover
     $('.projects__slide-wrapper-elem').hover(
     function(){
         $(this.getElementsByClassName('projects__image-text')).css({
