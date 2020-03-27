@@ -1918,8 +1918,8 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: "<img src='./source/img/header/left.svg'  class='slider__arrow slider__arrow--prev'>",
-        nextArrow: "<img src='./source/img/header/right.svg' class='slider__arrow slider__arrow--next'>",
+        prevArrow: "<img src='./build/img/header/left.svg'  class='slider__arrow slider__arrow--prev'>",
+        nextArrow: "<img src='./build/img/header/right.svg' class='slider__arrow slider__arrow--next'>",
         dots: true
 
     });
@@ -1961,7 +1961,7 @@ $(document).ready(function(){
     $('.underheader__list li').hover(function(){
        
         $(this.getElementsByClassName('underheader__img')).attr(
-            'src', "./source/img/underheader/"+$(this).attr("class")+"hover.svg"
+            'src', "./build/img/underheader/"+$(this).attr("class")+"hover.svg"
         )
         $(this.getElementsByClassName('underheader__h1')).css({
             "color":"#c7b299",
@@ -1971,7 +1971,7 @@ $(document).ready(function(){
         })
     }, function(){
         $(this.getElementsByClassName('underheader__img')).attr(
-            'src', "./source/img/underheader/"+$(this).attr("class")+".svg"
+            'src', "./build/img/underheader/"+$(this).attr("class")+".svg"
         )
         $(this.getElementsByClassName('underheader__h1')).css({
             "color":"#555555"
