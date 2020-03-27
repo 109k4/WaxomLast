@@ -1872,7 +1872,8 @@ $(document).ready(function(){
     $('.header__slider').css({
         "visibility": "visible"
     });
-    // sidebar-menu--------------------
+    // burger-menu--------------------
+    var count = 0;
 
     $('.fa-bars').click(function(){
        $('.header__hidden-links').css({
@@ -1884,6 +1885,7 @@ $(document).ready(function(){
        $('.fa-times').css({
         "display":"block"
        });
+       count = 0;
     });
 
     $('.fa-times').click(function(){
@@ -1896,25 +1898,70 @@ $(document).ready(function(){
         $('.fa-times').css({
             "display":"none"
            });
+        count = 0;
      });
+
+     $('body').click(function(){
+        count ++;
+        
+        if(count == 2){
+            $('.header__hidden-links').css({
+                "right": "-150px"
+
+            });
+             count = 0;
+        }
+    });
    
     // slick-----------------------
     $('.slider').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: "<img src='./build/img/header/left.svg'  class='slider__arrow slider__arrow--prev'>",
-        nextArrow: "<img src='./build/img/header/right.svg' class='slider__arrow slider__arrow--next'>",
+        prevArrow: "<img src='./source/img/header/left.svg'  class='slider__arrow slider__arrow--prev'>",
+        nextArrow: "<img src='./source/img/header/right.svg' class='slider__arrow slider__arrow--next'>",
         dots: true
 
     });
+    //   search-input--------------
+
+    // var counter = 0;
+
+    // $('.header__search-button').click(function(){
+    //     $(this).css({ 
+    //         "background-color": "#d3c1ad",
+    //         "border-radius": "100%",
+    //         "z-index":"2"
+    //      });
+    //      $('.header__input-wrapper').slideToggle('fast');
+
+    //      counter = 0;
+    //  });
+     
+    //  $('body').click(function(){
+    //     counter ++;
+
+    //     $('.header__input-wrapper').click(function(){
+    //         counter = 0;
+    //     });
+
+    //     if(counter == 2){
+    //         $('.header__search-button').css({ 
+    //             "background-color": "none",
+    //             "border-radius": "none",
+    //             "z-index":"3"
+    //          });
+    //          $('.header__input-wrapper').slideUp('fast');
+    //          counter = 0;
+    //     }
+    //  });
 
     //  underheader-hover--------------------------------------------------
      
     $('.underheader__list li').hover(function(){
        
         $(this.getElementsByClassName('underheader__img')).attr(
-            'src', "./build/img/underheader/"+$(this).attr("class")+"hover.svg"
+            'src', "./source/img/underheader/"+$(this).attr("class")+"hover.svg"
         )
         $(this.getElementsByClassName('underheader__h1')).css({
             "color":"#c7b299",
@@ -1924,7 +1971,7 @@ $(document).ready(function(){
         })
     }, function(){
         $(this.getElementsByClassName('underheader__img')).attr(
-            'src', "./build/img/underheader/"+$(this).attr("class")+".svg"
+            'src', "./source/img/underheader/"+$(this).attr("class")+".svg"
         )
         $(this.getElementsByClassName('underheader__h1')).css({
             "color":"#555555"
@@ -1935,6 +1982,12 @@ $(document).ready(function(){
 
     });
 
+    // projects-dots-text-------------------------------------------------
+    // $('.projects .slick-dots li:nth-of-type(1)').text('All')
+    // $('.projects .slick-dots li:nth-of-type(2)').text('Web Design')
+    // $('.projects .slick-dots li:nth-of-type(3)').text('Mobile App')
+    // $('.projects .slick-dots li:nth-of-type(4)').text('illustration')
+    // $('.projects .slick-dots li:nth-of-type(5)').text('Photography')
     // pojects-hover
     $('.projects__slide-wrapper-elem').hover(
     function(){
