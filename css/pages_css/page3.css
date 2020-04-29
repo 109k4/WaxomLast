@@ -1,0 +1,498 @@
+/* 
+header: styled in "page2.css"
+*/
+
+
+.page3-wrraper {
+    padding-top: 25vh;
+    padding-bottom: 14vh;
+    margin-top: -30px;
+
+    display: -webkit-box;
+
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+            align-items: center;
+}
+
+/* main */
+.page3__main {
+    width: 40%;
+
+    padding-bottom: 30px;
+
+    margin-left: -35vw;
+
+    
+    z-index: 20;
+}
+
+.components {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.123);
+
+    color: black;
+
+    width: 100%;
+    min-width: 300px;
+
+    margin: 30px auto;
+
+    position: relative;
+
+    visibility: hidden;
+}
+
+.component {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+
+    background-color: white;
+
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    box-shadow: inset 0 0 2px rgba(201, 201, 201, 0.63);
+}
+.component__wrraper{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+            align-items: center;
+
+    position: absolute;
+
+    left: 20%;
+}
+.second-wrraper{
+    width: 170px;
+
+    position: absolute;
+
+    left: 50%;
+}
+.component__number{
+    width: 30px;
+
+    position: absolute;
+
+    left: 2%;
+}
+
+
+.component__color {
+    height: 10px;
+    width: 15px;
+
+    position: absolute;
+    
+    left: 10%;
+
+    color: transparent;
+    font-size: 10px;
+}
+
+.component__buttons {
+    display: -webkit-box;
+    display: flex;
+
+    margin-left: 5px;
+}
+
+.component__value {
+    max-width: 47px;
+    margin-left: 5px;
+
+    padding-bottom: 5px;
+
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.add {
+    background-color: transparent;
+
+    font-size: 25px;
+
+    width: 20px;
+    height: 100%;
+
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: -webkit-box;
+
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    -webkit-transition: all .2s;
+
+    transition: all .2s;
+}
+
+.remove {
+    background-color: transparent;
+
+    font-size: 25px;
+
+    width: 20px;
+    height: 100%;
+
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    cursor: pointer;
+
+    display: none;
+
+    -webkit-transition: all .2s;
+
+    transition: all .2s;
+}
+
+/* flask */
+.flask-wrraper{
+    position: fixed;
+
+    top: 33vh;
+    right: 12vw;
+
+    visibility: hidden;
+}
+.flask {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+
+    height: 300px;
+    width: 300px;
+
+    position: relative;
+}
+
+.flask img {
+    height: 100%;
+    width: 100%;
+
+    z-index: 1;
+}
+
+.flask__scale {
+    width: 100%;
+    height: 90%;
+
+    top: 7.5%;
+
+    display: -webkit-box;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-flow: column;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+
+    position: absolute;
+}
+
+.scale-elem {
+    width: 100%;
+
+    display: -webkit-box;
+
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+}
+/* hoivering elem */
+.hovering-elem{
+    width: 100%;
+    height: 90%;
+
+    z-index: 10;
+
+    background-color: transparent;
+
+    position: relative;
+}
+.hovering-line{
+    width: 0%;
+    max-height: 1px;
+
+    border-bottom: 1px solid black;
+    color: black;
+    line-height: 10px;
+
+    position: absolute;
+
+    right: -25%;
+    top: 50%;
+
+    display: none;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+}
+.hovering-name{
+    display: -webkit-box;
+    display: flex;
+
+    top: -20px;
+
+    padding: 5px;
+
+    position: absolute;
+}
+.hovering-name::before{
+    content: '';
+
+    width: 220px;
+    height: 1px;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+
+    left: -195px;
+    top: -60%;
+
+    -webkit-transform: rotate(-20deg);
+
+            transform: rotate(-20deg);
+}
+.specialDiv{
+    color: black;
+    background-color: #fff;
+
+    border-bottom: 1px solid black;
+    padding: 5px;
+
+    -webkit-transform: translateY(-81px) translateX(12px);
+
+            transform: translateY(-81px) translateX(12px);
+}
+.hovering-elem:hover>.hovering-line{
+    display: -webkit-box;
+    display: flex;
+}
+/* draw  a screen for hide hovering elem of skale*/
+.screen-for-hovering{
+    position: absolute;
+
+    border-radius: 10px;
+    background-color: transparent;
+
+    z-index: 11;
+}
+#screen-for-hovering-left{
+    height: 80%;
+    width: 163px;
+
+    left: -80px;
+    bottom: 58px;
+
+    -webkit-transform: rotate(26deg);
+
+            transform: rotate(26deg);
+}
+#screen-for-hovering-right{
+    height: 80%;
+    width: 163px;
+
+    right: -77px;
+    bottom: 58px;
+
+    -webkit-transform: rotate(-26deg);
+
+            transform: rotate(-26deg);
+}
+#screen-for-hovering-leftBottom{
+    height: 30%;
+    width: 93px;
+
+    left: -54px;
+    bottom: -30px;
+
+    -webkit-transform: rotate(-20deg);
+
+            transform: rotate(-20deg);
+}
+#screen-for-hovering-rightBottom{
+    height: 30%;
+    width: 93px;
+
+    right: -54px;
+    bottom: -30px;
+
+    -webkit-transform: rotate(20deg);
+
+            transform: rotate(20deg);
+}
+#screen-for-hovering-leftTop{
+    width: 55px;
+    height: 60px;
+
+    top: 0;
+    right: 70px;
+}
+#screen-for-hovering-rightTop{
+    width: 51px;
+    height: 60px;
+    
+    top: 0;
+    left: 70px;
+}
+
+
+.scaleValue-wrraper {
+    color: black;
+    width: 100px;
+
+    margin-left: 20px;
+
+    display: -webkit-box;
+
+    display: flex;
+
+    position: absolute;
+
+    right: -80px;
+    z-index: 2;
+}
+
+/* styles for colorpiker */
+.pickr{
+    position: absolute !important;
+
+    left: 9%;
+
+    z-index: 1;
+}
+/* .pcr-app{
+    margin-bottom: 250px !important;
+} */
+
+/* 
+footer: styled in "page2.css" 
+*/
+
+/* MEDIA ------------------------------------------------------------------------------------------------------ */
+@media(max-width: 1060px){
+    .compDiv{
+        display: none;
+    }
+    .component__wrraper{
+        left: 25%;
+    }
+    .second-wrraper{
+        left: 60%;
+
+        width: 110px;
+    }
+    .component__value{
+        padding-bottom: 1px;
+    }
+}
+@media(max-width: 900px) {
+    .page3-wrraper {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-flow: column;
+        -webkit-box-align: center;
+                align-items: center;
+
+        padding-top: 23vh;
+        padding-bottom: 0;
+    }
+
+    .flask-wrraper{
+        position: static;
+
+        -webkit-box-ordinal-group: 2;
+
+                order: 1;
+
+        padding-top: 6vh;
+        padding-bottom: 6vh;
+    }
+    .flask {
+        position: relative;
+
+        bottom: 0;
+        top: 0;
+        right: 0;
+    }
+
+    .page3__main {
+        width: 400px;
+        margin: 0 auto;
+
+        -webkit-box-ordinal-group: 3;
+
+                order: 2;
+    }
+
+}
+@media(max-width: 766px) {
+    #bulb{
+        display: none;
+    }
+}
+@media(max-width: 500px){
+    .flask{
+        height: 200px;
+        width: 200px;
+    }
+    .hovering-name{
+        display: none;
+    }
+    
+}
+
+@media(max-width:418px) {
+    .page3__main {
+        width: 340px;
+    }
+    .component{
+        padding-left: 8px;
+        padding-right: 4px;
+    }
+    .component__number{
+        padding-right: 5px;
+    }
+    .components{
+        font-size: 13.5px;
+    }
+    .add, .remove{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+@media(max-width:370px) {
+    .page3__main {
+        width: 300px;
+    }
+    .components{
+        font-size: 12.5px;
+    }
+}

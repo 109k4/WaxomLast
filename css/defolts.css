@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.page{
+    min-height: 100vh;
+    height: 100%;
+
+    color: white;
+
+    display: -webkit-box;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+
+    position: relative;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    color: transparent;
+    display: block;
+}

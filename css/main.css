@@ -1,0 +1,7 @@
+/* libs */
+@import "./normalize.css";
+/*  */
+@import "./defolts.css";
+@import "./pages_css/main-page.css";
+@import "./pages_css/page2.css";
+@import "./pages_css/page3.css";
