@@ -4,71 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> 
-    <!-- main styles -->
     <link rel="stylesheet" href="./css/main.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+    <!-- style for color picker -->
+    <link rel="stylesheet" href="./libs/colorPicker/nano.min.css"/>
 </head>
 <body>
-    <section id="banner">
-        <!-- section with image -->
-        <div class="banner__main">
-            <img src="./image/main-img.jpg" alt="main-img">
-        </div>
-        <!-- list -->
-        <div class="banner__list">
-            <h1 class="banner__headerOfList">Class Breakdown</h1>
-            <div class="banner__listMainPart">
-                <div class="banner__side-block">
-                    <img src="./image/sideblocks-image.png" alt="image">
-                    <img src="./image/sideblocks-image.png" alt="image">
+    <main>
+        
+            <div class="main-wrraper">
+                <!-- left -->
+                <div class="left">
+                    <div class="top-left-text">
+                        <div>AI based tool boxes</div>
+                        <div>for chemists, R&D labs</div>
+                    </div>
+                    <h2 class="left__h1">
+                        <span>InFLOWS</span>
+                        <spna>App portfolio</span>
+                    </h2>
+                    <div class="left__main">
+                        <div class="left__header">
+                            <i class="fas fa-quote-right"></i>
+                            <div class="left__text">Products that dont use AI or Machine Learning will die a natural death</div>
+                        </div>
+                        <div class="left__bottom">
+                            <div class="left__line"></div>
+                            <div class="left__lineText">Manich Singhal, Forbes</div>
+                        </div>
+                    </div>
+                    <div class="left__bottom-text">Powered by InFLOWS</div>
                 </div>
-                <ul>
-                    <li>
-                        <h2>MODULE ONE: SUCCESS STRATEGY LAYOUT</h2>
-                        <p>
-                            We will breakdown the details of EXACTLY what it 
-                            take to see an increase of 50 to 300 point increase
-                            on your score. You will be given resources, strategies,
-                            guaranteed approval accounts and knowledge of the best times
-                            to apply theSe tips and tricks.
-                        </p>
-                    </li>
-                    <li>
-                        <h2>MODULE TWO: POSITIVE CREDIT</h2>
-                        <p>
-                            We will breakdown the difference between what
-                            you may se on credit karma vs what lenders see
-                            when they run your report. By the end of this
-                            module you will know how to read, assess, and
-                            interpret your credit file.
-                        </p>
-                    </li>
-                    <li>
-                        <h2>MODULE THREE: REPAIR & REMOVE</h2>
-                        <p>
-                            We will learn the truth about removing negative
-                            items and settling debts. This chapter will consist
-                            of templates, instructions, how to TRULY use the
-                            law to understand and fight against the tactics of
-                            creditors and collection agencies.
-                        </p>
-                    </li>
-                    <li>
-                        <h2>MODULE FOUR: LEVERAGING & MAINTAINING</h2>
-                        <p>
-                            We will uncover the ways to know leverage your
-                            credit to build businesses, invest, or pay down
-                            large amounts of debt QUICK [such as homes, student loans, or auto].
-                        </p>
-                    </li>
-                </ul>
-                <div class="banner__side-block">
-                    <img src="./image/sideblocks-image.png" alt="image">
-                    <img src="./image/sideblocks-image.png" alt="image">
+                <!-- right -->
+                <div class="right">
+                    <div class="right__icon">
+                        <img src="./img/main-page/Logo.png" alt="Logo">
+                    </div>
+                    <div class="right__form">
+                        <form action="#">
+                            <label class="labels" for="e-mail">E-MAIL</label>
+                            <input id="e-mail" type="text" placeholder="Enter your email adress">
+                            <!-- E-mail -->
+                            <label class="labels" for="password">PASSWORD</label>
+                            <input id="password" type="password" placeholder="Enter your password">
+                            <!-- Password -->
+                            <input class="main-button" type="submit" value="SIGN IN">
+                        </form>
+                    </div>
+                    <div class="right__text" id="text">
+                        Halping industry labs leverage their data strategy.
+                        Empowering scientists, chemists address R&D challenges
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        
+    </main>
+    <!-- scripts --------------------------------------------------------------------------------------->
+    <!-- libs -->
+    <!-- color picker -->
+    <script src="./libs/colorPicker/pickr.min.js"></script>
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/ed8b47c6a4.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="./libs/JQuery/jquery-3.5.0.min.js"></script>
+    <!-- main scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>
